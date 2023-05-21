@@ -1,5 +1,5 @@
 #!/bin/bash
 # your command
-yarn install && yarn dev
+yarn install
 # Then sleep indefinitely
 sleep infinity
