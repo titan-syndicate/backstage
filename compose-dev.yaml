@@ -1,6 +1,8 @@
 services:
   app:
-    entrypoint: ["entrypoint.sh"]
+    entrypoint:
+    - sleep
+    - infinity
     image: mcr.microsoft.com/devcontainers/javascript-node:18
     init: true
     volumes:
