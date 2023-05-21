@@ -7,3 +7,6 @@ services:
     - type: bind
       source: /var/run/docker.sock
       target: /var/run/docker.sock
+    - node_modules:/com.docker.devenvironments.code/node_modules
+volumes:
+  node_modules:
