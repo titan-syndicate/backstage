@@ -3,7 +3,7 @@ services:
     entrypoint:
     - sleep
     - infinity
-    image: rianfowler/backstage-dev
+    image: rianfowler/backstage-dev:latest
     init: true
     volumes:
     - type: bind
