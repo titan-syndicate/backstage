@@ -3,7 +3,7 @@ services:
     entrypoint:
     - sleep
     - infinity
-    image: mcr.microsoft.com/devcontainers/javascript-node:18
+    image: rianfowler/backstage-dev
     init: true
     volumes:
     - type: bind
