@@ -31,4 +31,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: rianfowler/backstage-dev:latest
+          tags: ${{ GITHUB_SHA }}, rianfowler/backstage-dev:latest
