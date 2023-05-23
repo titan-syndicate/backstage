@@ -2,7 +2,7 @@
 FROM node:18 AS build
 WORKDIR /usr/src/app
 COPY package*.json yarn.lock ./
-RUN yarn
+RUN yarn install --network-timeout 1000000000
 
 # --- Production stage ---
 FROM mcr.microsoft.com/devcontainers/javascript-node:18 AS production
