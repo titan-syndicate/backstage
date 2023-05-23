@@ -6,7 +6,7 @@ RUN yarn install --network-timeout 1000000000
 
 # --- Production stage ---
 FROM mcr.microsoft.com/devcontainers/javascript-node:18 AS production
-WORKDIR /com.docker.devenvironments.code
+WORKDIR /build
 COPY --from=build /usr/src/app/node_modules ./node_modules
 COPY . .
 CMD sleep infinity
